@@ -12,17 +12,15 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
-            /* Fundo quase preto para dar o clima de "sombra" */
             background-color: #121212; 
-            /* Texto cinza claro para leitura confortável */
             color: #e0e0e0; 
         }
 
         header {
-            background-color: #000000; /* Preto total */
+            background-color: #000000;
             padding: 20px 0;
             text-align: center;
-            border-bottom: 3px solid #800000; /* Linha vermelho sangue */
+            border-bottom: 3px solid #800000;
         }
 
         header h1 {
@@ -41,19 +39,17 @@
         }
 
         nav a:hover {
-            color: #ff4d4d; /* Fica vermelho ao passar o mouse */
+            color: #ff4d4d;
         }
 
-        /* Seção Principal (Hero) */
         .hero {
             background: linear-gradient(to bottom, #1a1a1a, #0d0d0d);
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
 
-        /* Seção do Livro */
         .livro-destaque {
-            background-color: #1e1e1e; /* Cinza escuro */
+            background-color: #1e1e1e;
             padding: 40px 20px;
             text-align: center;
             margin: 20px auto;
@@ -63,13 +59,23 @@
             box-shadow: 0 0 20px rgba(0,0,0,0.7);
         }
 
+        /* --- NOVO: Estilo da Imagem --- */
+        .img-livro {
+            max-width: 100%;     /* Garante que a imagem não saia da caixa */
+            height: auto;        /* Mantém a proporção correta */
+            border-radius: 5px;  /* Bordas levemente arredondadas */
+            margin-bottom: 20px; /* Espaço entre a imagem e o texto */
+            max-height: 400px;   /* Limita a altura para não ocupar a tela toda */
+            border: 2px solid #333; /* Borda sutil */
+        }
+
         h3 {
-            color: #ff4d4d; /* Títulos em destaque vermelho */
+            color: #ff4d4d;
         }
 
         .botao-livro {
             display: inline-block;
-            background-color: #800000; /* Vermelho escuro */
+            background-color: #800000;
             color: white;
             padding: 12px 25px;
             text-decoration: none;
@@ -80,10 +86,9 @@
         }
 
         .botao-livro:hover {
-            background-color: #ff4d4d; /* Clareia ao passar o mouse */
+            background-color: #ff4d4d;
         }
 
-        /* Seção Sobre */
         .sobre {
             padding: 40px 20px;
             max-width: 800px;
@@ -118,6 +123,8 @@
     </section>
 
     <section id="livro" class="livro-destaque">
+        <img src="capa.jpg" alt="Capa do livro A Rodovia das Sombras" class="img-livro">
+        
         <h3>📖 Em Breve: A Rodovia das Sombras</h3>
         <p>
             O asfalto esconde segredos que ninguém ousa desenterrar. 
